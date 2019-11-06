@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        >
+
+        <ImageView
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/ivContact"
+            android:src="@android:drawable/ic_input_add"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_weight="6"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/tvName"
+                android:text="Tuan Nguyen"
+                />
+
+            <TextView
+                android:layout_weight="6"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/tvPhone"
+                android:text="+84 363 839 897"
+                />
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="FOLLOW"
+            android:id="@+id/btFollow"
+            android:layout_gravity="center"
+            >
+
+        </Button>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
